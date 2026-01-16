@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "Anak Kusuma | Portfolio",
     description: "Transforming raw data into meaningful insights.",
     type: "website",
+    images: ["/icon.jpg"],
     locale: "en_US",
   },
 };
