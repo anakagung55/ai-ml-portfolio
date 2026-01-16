@@ -5,12 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // Teks ini akan muncul di Tab Browser dan Preview Chat
   title: "Anak Kusuma | Data Enthusiast & ML Engineer",
-  
-  // Deskripsi ini muncul di bawah link saat dibagikan
-  description: "Portfolio of Anak Kusuma, a passionate Data Professional and Machine Learning Engineer specializing in building intelligent systems and automation.",
-  
+  description: "Portfolio of Anak Kusuma...",
+  icons: {
+    icon: "/icon.jpg",
+  },
   // Memastikan preview terlihat bagus di LinkedIn/WhatsApp
   openGraph: {
     title: "Anak Kusuma | Portfolio",
