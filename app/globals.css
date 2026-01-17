@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-dark: #030712;
-  --color-teal-accent: #2dd4bf;
+  --color-navy-dark: #022c22; /* Hijau sangat gelap */
+  --color-teal-accent: #10b981; /* Hijau Emerald terang */
 }
 
 @layer base {
