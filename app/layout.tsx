@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title: "Anak Kusuma | Data Enthusiast & ML Engineer",
   description: "Portfolio of Anak Kusuma...",
   icons: {
-    icon: "/icon.jpg",
+    icon: "/icon.png",
   },
   // Memastikan preview terlihat bagus di LinkedIn/WhatsApp
   openGraph: {
     title: "Anak Kusuma | Portfolio",
     description: "Transforming raw data into meaningful insights.",
     type: "website",
-    images: ["/icon.jpg"],
+    images: ["/icon.png"],
     locale: "en_US",
   },
 };
