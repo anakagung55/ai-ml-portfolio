@@ -9,7 +9,8 @@ export default function Portfolio() {
       role: "Data Analyst & Scientist Intern",
       company: "Interlaces Studies Bali",
       description: "Transforming complex education and migration data into actionable insights. Collecting, cleaning, and analyzing large-scale datasets, developing data models, and implementing machine learning techniques to drive impactful recommendations.",
-      skills: ["Data Modeling", "Advanced Analytics", "Machine Learning", "Python", "SQL"]
+      skills: ["Data Modeling", "Advanced Analytics", "Machine Learning", "Python", "SQL"],
+      link: "https://magang.ajus.xo.je"
     },
     {
       period: "DEC 2024 — DEC 2024",
@@ -122,19 +123,59 @@ export default function Portfolio() {
           <section id="experience" className="mb-16 scroll-mt-24">
             <div className="flex flex-col gap-12">
               {experiences.map((exp, i) => (
-                <div key={i} className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-4">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50"></div>
-                  <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">{exp.period}</header>
-                  <div className="z-10 sm:col-span-6">
-                    <h3 className="font-medium leading-snug text-slate-200">
-                      <span className="group-hover:text-teal-300">{exp.role} · {exp.company}</span>
-                    </h3>
-                    <p className="mt-2 text-sm leading-normal text-slate-400">{exp.description}</p>
-                    <ul className="mt-4 flex flex-wrap gap-2">
-                      {exp.skills.map(skill => (
-                        <li key={skill} className="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-300">{skill}</li>
-                      ))}
-                    </ul>
+                /* Gunakan tag <a> jika ada link, jika tidak gunakan <div> */
+                <div key={i} className="group relative">
+                  <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-4">
+                    {/* Hover Effect Background */}
+                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50"></div>
+                    
+                    <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                      {exp.period}
+                    </header>
+                    
+                    <div className="z-10 sm:col-span-6">
+                      <h3 className="font-medium leading-snug text-slate-200">
+                        <div>
+                          {/* Jika ada link, bungkus dengan anchor tag */}
+                          {exp.link ? (
+                            <a 
+                              href={exp.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            >
+                              <span className="absolute -inset-x-4 -inset-y-4 hidden rounded md:-inset-x-6 md:-inset-y-6 lg:block"></span>
+                              <span>
+                                {exp.role} · {" "}
+                                <span className="inline-block">
+                                  {exp.company}
+                                  <ExternalLink 
+                                    size={14} 
+                                    className="inline-block ml-1 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1" 
+                                  />
+                                </span>
+                              </span>
+                            </a>
+                          ) : (
+                            <span className="text-slate-200">
+                              {exp.role} · {exp.company}
+                            </span>
+                          )}
+                        </div>
+                      </h3>
+                      
+                      <p className="mt-2 text-sm leading-normal text-slate-400">
+                        {exp.description}
+                      </p>
+                      
+                      <ul className="mt-4 flex flex-wrap gap-2">
+                        {exp.skills.map(skill => (
+                          <li key={skill} className="rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium text-teal-300">
+                            {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               ))}
