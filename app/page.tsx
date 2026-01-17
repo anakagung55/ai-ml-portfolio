@@ -7,7 +7,7 @@ export default function Portfolio() {
     {
       period: "JULY 2025 — PRESENT",
       role: "Data Analyst & Scientist Intern",
-      company: "Interlaces Studies Bali",
+      company: "Interlace Studies Bali",
       description: "Transforming complex education and migration data into actionable insights. Collecting, cleaning, and analyzing large-scale datasets, developing data models, and implementing machine learning techniques to drive impactful recommendations.",
       skills: ["Data Modeling", "Advanced Analytics", "Machine Learning", "Python", "SQL"],
       link: "https://magang.ajus.xo.je"
