@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Spotlight from "./Spotlight";
+import Particles from "./Particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-navy-dark text-slate-400 antialiased`}>
         
         {/* 2. Tambahkan komponen Spotlight di sini */}
+        <Particles />
         <Spotlight />
         
         {children}
