@@ -79,8 +79,6 @@ export default function Portfolio() {
 
   return (
     <div className="mx-auto min-h-screen max-w-6xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-      <div className="fixed inset-0 z-[-1] bg-[radial-gradient(circle_at_50%_50%,rgba(249,115,22,0.05),transparent_70%)]"></div>
-
       <div className="lg:flex lg:justify-between lg:gap-12">
         {/* KOLOM KIRI (Header Sticky) */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
@@ -103,10 +101,10 @@ export default function Portfolio() {
             </nav>
           </div>
           <ul className="ml-1 mt-8 flex items-center gap-6 text-slate-400">
-            <li className="hover:text-orange-400 transition-colors"><a href="https://github.com/anakagung55" target="_blank"><Github size={22} /></a></li>
-            <li className="hover:text-orange-400 transition-colors"><a href="https://www.linkedin.com/in/anak-kusuma-29189932a/" target="_blank"><Linkedin size={22} /></a></li>
-            <li className="hover:text-orange-400 transition-colors"><a href="https://www.instagram.com/agungajus_/" target="_blank"><Instagram size={22} /></a></li>
-            <li className="hover:text-orange-400 transition-colors"><a href="mailto:agungajus02@gmail.com"><Mail size={22} /></a></li>
+            <li className="hover:text-cyan-400 transition-colors"><a href="https://github.com/anakagung55" target="_blank"><Github size={22} /></a></li>
+            <li className="hover:text-cyan-400 transition-colors"><a href="https://www.linkedin.com/in/anak-kusuma-29189932a/" target="_blank"><Linkedin size={22} /></a></li>
+            <li className="hover:text-cyan-400 transition-colors"><a href="https://www.instagram.com/agungajus_/" target="_blank"><Instagram size={22} /></a></li>
+            <li className="hover:text-cyan-400 transition-colors"><a href="mailto:agungajus02@gmail.com"><Mail size={22} /></a></li>
           </ul>
         </header>
 
@@ -119,7 +117,7 @@ export default function Portfolio() {
             <p className="mb-4">
               I specialize in <span className="text-slate-200 font-medium">building intelligent systems</span> and automating repetitive tasks using Python and SQL. My goal is always to deliver accuracy and efficiency in every data pipeline I build.
             </p>
-            <p>Tools: <span className="text-orange-400 font-medium">Python | Pandas | SQL | Power BI | TensorFlow | Scikit-Learn</span></p>
+            <p>Tools: <span className="text-cyan-400 font-medium">Python | Pandas | SQL | Power BI | TensorFlow | Scikit-Learn</span></p>
           </section>
 
           <section id="experience" className="mb-16 scroll-mt-24">
@@ -144,7 +142,7 @@ export default function Portfolio() {
                               href={exp.link} 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-orange-400 focus-visible:text-orange-400 group/link text-base"
+                              className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-400 focus-visible:text-cyan-400 group/link text-base"
                             >
                               <span className="absolute -inset-x-4 -inset-y-4 hidden rounded md:-inset-x-6 md:-inset-y-6 lg:block"></span>
                               <span>
@@ -172,7 +170,7 @@ export default function Portfolio() {
                       
                       <ul className="mt-4 flex flex-wrap gap-2">
                         {exp.skills.map(skill => (
-                          <li key={skill} className="rounded-full bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400">
+                          <li key={skill} className="rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">
                             {skill}
                           </li>
                         ))}
@@ -194,7 +192,7 @@ export default function Portfolio() {
                   
                   {/* --- Bagian Gambar Thumbnail (Baru) --- */}
                   <div className="z-10 sm:col-span-3 order-1 sm:order-1">
-                    <div className="rounded border-2 border-slate-200/10 transition group-hover:border-orange-400/30 overflow-hidden">
+                    <div className="rounded border-2 border-slate-200/10 transition group-hover:border-cyan-400/30 overflow-hidden">
                         <Image
                         src={proj.image}
                         alt={proj.title}
@@ -207,13 +205,13 @@ export default function Portfolio() {
 
                   {/* --- Bagian Teks Deskripsi --- */}
                   <div className="z-10 sm:col-span-5 order-2 sm:order-2">
-                    <h3 className="font-medium leading-snug text-slate-200 group-hover:text-orange-400 flex items-center gap-2">
+                    <h3 className="font-medium leading-snug text-slate-200 group-hover:text-cyan-400 flex items-center gap-2">
                       {proj.title} <ExternalLink size={14} className="inline-block shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
                     </h3>
                     <p className="mt-2 text-sm leading-normal text-slate-400">{proj.description}</p>
                     <ul className="mt-4 flex flex-wrap gap-2">
                       {proj.skills.map(skill => (
-                        <li key={skill} className="rounded-full bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400">{skill}</li>
+                        <li key={skill} className="rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-400">{skill}</li>
                       ))}
                     </ul>
                   </div>

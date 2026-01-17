@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Spotlight from "./Spotlight";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-[#030712] text-slate-400 antialiased`}>
+      <body className={`${inter.className} bg-navy-dark text-slate-400 antialiased`}>
+        
+        {/* 2. Tambahkan komponen Spotlight di sini */}
+        <Spotlight />
+        
         {children}
       </body>
     </html>
