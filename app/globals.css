@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-dark: #022c22; /* Hijau sangat gelap */
-  --color-teal-accent: #10b981; /* Hijau Emerald terang */
+  --color-navy-dark: #020617;     /* Hitam Obsidian */
+  --color-accent-main: #f97316;  /* Oranye Cerah */
+  --color-slate-text: #94a3b8;
+  --color-slate-heading: #e2e8f0;
 }
 
 @layer base {
   body {
     background-color: var(--color-navy-dark);
-    color: #94a3b8;
+    color: var(--color-slate-text);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
   }
