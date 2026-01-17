@@ -17,14 +17,16 @@ export default function Portfolio() {
       role: "Data Annotator (Freelance)",
       company: "MORAVIA IT SRO",
       description: "Aligned English audio with Indonesian transcriptions for text-to-speech models. Worked with NLP models to enhance AI voice synthesis and ensured high-quality linguistic accuracy.",
-      skills: ["NLP", "Speech Annotation", "Quality Control", "Linguistic Accuracy"]
+      skills: ["NLP", "Speech Annotation", "Quality Control", "Linguistic Accuracy"],
+      link: "https://www.upwork.com/freelancers/~01da009b7a5052d219"
     },
     {
       period: "DEC 2024 — DEC 2024",
       role: "Data Annotator (Freelance)",
       company: "Scale Labs",
       description: "Conducted mathematical data labeling for ML model training. Worked with large-scale datasets to improve algorithm accuracy and maintained data integrity in preprocessing workflows.",
-      skills: ["Mathematical Labeling", "Data Preprocessing", "ML Algorithms", "Dataset Structuring"]
+      skills: ["Mathematical Labeling", "Data Preprocessing", "ML Algorithms", "Dataset Structuring"],
+      link: "https://www.upwork.com/freelancers/~01da009b7a5052d219"
     }
   ];
 
